@@ -1,0 +1,41 @@
+1] INTRODUCTION TO PRTHON
+Python is a high level interpreted language. It is widely used because of simplicity and readability.
+Python emphasizes code readability with straight forward syntax. It is object oriented programming, it supports classes and objects.
+Python used in web development, AI , Machine learning , data science , etc.
+
+EXAMPLE: print("Hello World!") #Hello World
+
+         # Simple Addition Program
+         a = 10
+         b = 30
+         sum = a + b
+         print("sum:",a + b)  # 10 + 30 = 40
+ 2] There are some Syntax and Fundamentals :
+         1. Keywords and Identifiers.
+         2. Variables and Constants.
+         3. Data Types like (int, float, string, bool)
+         4. Input/Output (print(), input())
+         5. Comments (single-line, multi-line)
+3] Operators 
+         1. Arithmatic Operators. 
+         2. Relational Opearators.
+         3. Logical Operators.
+         4. Assignment Opeartors.
+4] Control Flows:
+         1. if else, elif Statements.
+         2. Loops: for loop, while loop.
+         3. Break: continue, pass statements.
+5] Data Structures:
+         1. Strings.
+         2. Lists.
+         3. Tuples.
+         4. Sets.
+         5. Dictionaries.
+6] Functions:
+         1. Defining and Calling Functions.
+         2. Recursion.
+         3. Built-in Function.
+7] File Handling: 
+         1. Reading from Files.
+         2. Writing to files.
+         3. Working with text.

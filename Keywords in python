@@ -1,0 +1,33 @@
+# KEYWORDS IN PYTHON.......
+
+Keywords are reserved words in python that have special meaning and purpose.
+They cannot be used as variable names,function names,or identifiers.
+Examples: if,else,whiel,for class,True,False,None,etc.
+Python has around 35+ keywords.
+
+CODE:  Example 1: # Checking Even or Odd
+
+                    num=7
+                    if num % 2==0:
+                    print(num,"is Even")
+                    else
+                    print(num,"is Odd")
+
+                    OUTPUT: 7 is Odd
+
+      Example 2: Using if, else, elif
+
+                 marks = 85
+
+                if marks >= 90:
+                  print("Grade: A")
+               elif marks >= 75:
+                 print("Grade: B")
+               elif marks >= 60:
+                 print("Grade: C")
+               else:
+                 print("Grade: F")
+
+               OUTPUT: Grade: B
+
+

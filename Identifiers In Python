@@ -1,0 +1,67 @@
+#Identifiers in Python
+
+Identifiers are the names used to identify variables, functions, classes, modules, or other objects in Python.
+They are like labels that help us refer to values or objects stored in memory.
+
+Rules for Writing Identifiers
+
+1. Allowed characters:
+
+•Alphabets (a–z, A–Z)
+
+•Digits (0–9)
+
+•Underscore (_)
+
+
+
+2. Cannot start with a digit
+
+•name1 → valid  
+•1name → invalid
+
+
+
+3. Case-sensitive
+
+•Name, name, and NAME are all different identifiers.
+
+
+
+4. No special characters
+
+•student@name, total% are invalid
+
+
+
+5. No reserved keywords
+
+•Keywords like if, while, class, etc. cannot be used as identifiers.
+
+
+
+6. Can be of any length
+
+•But should be meaningful and readable.
+
+Example1: 
+           # Identifiers: student_name, age, totalMarks
+              student_name = "Kalyani"
+              age = 20
+              totalMarks = 450
+
+              print("Name:", student_name)
+              print("Age:", age)
+              print("Marks:", totalMarks)
+
+Output: Name: Kalyani
+        Age:20
+        Marks:450
+
+Example2: # Wrong identifiers
+1student = "ABC"     # starts with a digit
+class = "Math"       # 'class' is a keyword
+total-marks = 300    # special character '-'
+
+
+      

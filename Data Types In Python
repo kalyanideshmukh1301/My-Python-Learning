@@ -1,0 +1,74 @@
+#Data Types 
+
+Python has different data types.The most commonly uses are:
+
+a] int()  (Integer)
+
+• Represent whole no. ( no desimal point)
+• It can me positive, negative or zero.
+• Example: 2, -2, 0, 100, 130601.
+
+CODE:  x = 1        # positive integer
+       y = -2     # negative integer
+       z = 0         # zero
+
+       print("x =", x, "type:", type(x))
+       print("y =", y, "type:", type(y))
+       print("z =", z, "type:", type(z))
+
+Output :  x = 1 type: <class 'int'>
+          y = -2 type: <class 'int'>
+          z = 0 type: <class 'int'>
+
+b] float (Floating Point no.)
+
+•Numbers with desimal points
+•Example: 12.3, 3.0, 0.002
+
+CODE: a = 3.14
+      b = -1.5
+      c = 0.03
+
+      print("a =", a, "type:", type(a))
+      print("b =", b, "type:", type(b))
+      print("c =", c, "type:", type(c))
+
+Output: a = 3.14 type: <class 'float'>
+        b = -1.5 type: <class 'float'>
+        c = 0.03 type: <class 'float'>
+
+c] string (str)
+
+•It is a sequence of character like letters, numbers or symbols).
+•Always written inside'....' or "......"
+•Example: "Hello", 'Python123'.
+
+CODE:   name = "Kalyani"
+        greeting = 'Hello!'
+        sentence = "12345"   # even numbers can be strings if inside quotes
+
+        print("name =", name, "type:", type(name))
+        print("greeting =", greeting, "type:", type(greeting))
+        print("sentence =", sentence, "type:", type(sentence))
+
+Output:   name = Kalyani type: <class 'str'>
+          greeting = Hello! type: <class 'str'>
+          sentence = 12345 type: <class 'str'>
+
+d] bool (Boolean)
+
+•Stores only true or false value.
+•Often use in conditions (yes/no, pass/fail)
+
+CODE:    is_student = True
+         has_passed = False
+
+         print("is_student =", is_student, "type:", type(is_student))
+         print("has_passed =", has_passed, "type:", type(has_passed))
+
+Output:  is_student = True type: <class 'bool'>
+         has_passed = False type: <class 'bool'>
+
+
+
+

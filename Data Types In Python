@@ -69,6 +69,29 @@ CODE:    is_student = True
 Output:  is_student = True type: <class 'bool'>
          has_passed = False type: <class 'bool'>
 
+CODE:    # Example program using all 4 data types
+
+         # Integer (int) → whole number
+         age = 20
+         print("You are", age, "years old.")
+
+         # Float → decimal number
+         temperature = 36.6
+         print("Body temperature is:", temperature, "°C")
+
+         # String (str) → text
+         city = "Nagpur"
+         print("You live in", city)
+   
+         # Boolean (bool) → True/False
+         has_passport = False
+         print("Do you have a passport?", has_passport)
+
+Output:  You are 20 years old.
+         Body temperature is: 36.6 °C
+         You live in Nagpur 
+         Do you have a passport? False
+
 
 
 

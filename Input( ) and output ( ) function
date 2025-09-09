@@ -1,0 +1,50 @@
+1. Output Function (print())
+
+• In Python, we use print() to display information on the screen.
+• It can show text, numbers, or variable values.
+
+
+Syntax:
+
+print(value1, value2, ...)
+
+Examples:
+
+print("Hello, World!")        
+print(10)                     
+x = 5
+print("Value of x is:", x)    
+
+Output:  Hello, World!
+         10
+         Value of x is: 5
+
+2. Input Function (input())
+
+In Python, we use input() to take data from the user.
+
+By default, input is taken as a string.
+
+If you need numbers, you must convert using int() or float().
+
+
+Syntax:
+
+variable = input("Message for user: ")
+
+Examples:
+
+name = input("Enter your name: ")
+print("Hello,", name)
+
+age = int(input("Enter your age: "))   # Converts string to integer
+print("You are", age, "years old")
+
+Output (depends on user input):
+
+Enter your name: Alex
+Hello, Alex
+Enter your age: 21
+You are 21 years old
+
+

@@ -1,0 +1,64 @@
+Comments are used to explain the code.
+They make the program easier to understand.
+Python ignores comments during execution, so they don’t affect the output.
+
+• Types of Comments
+
+1. Single-line Comment
+Starts with # symbol.
+Everything after # on that line is ignored.
+
+Example:
+          # This is a single-line comment
+          x = 10  # storing value in x
+          print(x)
+
+2. Multi-line Comment
+Python doesn’t have a special syntax for multi-line comments, but you can do it in two ways:
+
+(a) Use # on multiple lines
+
+# Line 1 of comment
+# Line 2 of comment
+# Line 3 of comment
+
+(b) Use triple quotes (''' ... ''' or """ ... """)
+
+They are mostly for docstrings, but can also act like multi-line comments.
+
+This is a multi-line comment
+that spans across several lines
+Python will ignore it
+
+print("Hello World")
+
+• Why Use Comments?
+
+1. To explain the purpose of code.
+
+2. To make code easier to read for yourself and others.
+
+3. To help with debugging and maintenance.
+
+4. For documentation in larger projects.
+
+
+CODE:  # Program: Student Grading Example
+
+       # Store marks of a student
+       marks = 95
+
+       # Check grade based on marks
+       if marks >= 90:
+       grade = "A+"
+       elif marks >= 75:
+       grade = "A"
+       elif marks >= 50:
+       grade = "B"
+       else:
+       grade = "Fail"
+       print("Marks:", marks)
+       print("Grade:", grade)
+
+Output: Marks: 95
+        Grade: A+

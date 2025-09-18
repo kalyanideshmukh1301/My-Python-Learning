@@ -1,0 +1,65 @@
+•Loops in Python•
+
+Loops are used to repeat a block of code multiple times until a condition is met.
+There are mainly two types:
+
+1. for loop
+2. while loop
+
+1. for loop
+
+Used when you know how many times you want to repeat.
+Iterates over a sequence (like list, string, range).
+
+
+Syntax:
+
+for variable in sequence:
+    # code block
+
+Example 1: Print numbers 1 to 5
+
+for i in range(1, 6):
+    print(i)
+
+Output:
+
+1
+2
+3
+4
+5
+
+2. while loop
+
+Used when you don’t know in advance how many times to repeat.
+Runs as long as the condition is True.
+
+
+Syntax:
+
+while condition:
+    # code block
+
+Example 1: Print numbers 1 to 5
+
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+
+Output:
+
+1
+2
+3
+4
+5
+
+
+•Difference between for and while•
+
+•for loop → use when you know the number of repetitions.
+
+•while loop → use when you repeat until a condition changes.
+

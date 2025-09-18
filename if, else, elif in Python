@@ -1,0 +1,82 @@
+if, else, elif in Python
+
+These are conditional statements.
+They allow a program to make decisions based on conditions (True/False).
+
+1. if Statement.
+
+•Used to test a condition.
+•If the condition is True, the block of code runs.
+
+
+Syntax:
+
+if condition:
+    # code to run if condition is True
+
+Example:
+
+age = 20
+if age >= 18:
+    print("You are eligible to vote.")
+
+Output: You are eligible to vote.
+
+2. if...else Statement
+
+•Provides an alternative if the condition is False.
+
+
+Syntax:
+
+if condition:
+    # code if condition is True
+else:
+    # code if condition is False
+
+Example:
+
+age = 16
+if age >= 19:
+    print("You can vote.")
+else:
+    print("You are too young to vote.")
+
+Output: You are too young to vote.
+
+3. if...elif...else Statement
+
+•Used when you have multiple conditions to check.
+•elif means else if.
+•Only one block will run (the first True condition).
+
+
+Syntax:
+
+if condition1:
+    # code if condition1 is True
+elif condition2:
+    # code if condition2 is True
+elif condition3:
+    # code if condition3 is True
+else:
+    # code if none of the above are True
+
+Example:
+
+marks = 72
+
+if marks >= 90:
+    print("Grade: A")
+elif marks >= 75:
+    print("Grade: B")
+elif marks >= 50:
+    print("Grade: C")
+else:
+    print("Grade: Fail")
+
+Output: Grade: C
+
+
+
+

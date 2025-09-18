@@ -1,0 +1,111 @@
+Operators in Python..
+
+Operators are special symbols in Python that perform operations on variables and values.
+Example: +, -, *, /, etc.
+
+•Types of Operators in Python with Examples
+
+1. Arithmetic Operators
+
+Used for mathematical operations.
+Operator	Description	Example (a=10, b=3)	Result
+
++	Addition	a + b	13
+-	Subtraction	a - b	7
+*	Multiplication	a * b	30
+/	Division (float)	a / b	3.33
+//	Floor Division	a // b	3
+%	Modulus (remainder)	a % b	1
+**	Exponentiation	a ** b	1000
+
+2. Relational (Comparison) Operators
+
+Used to compare values (output is True or False).
+Operator	Example (a=10, b=3)	Result
+
+==	a == b	False
+!=	a != b	True
+>	a > b	True
+<	a < b	False
+>=	a >= b	True
+<=	a <= b	False
+
+3. Logical Operators
+
+Used to combine conditions.
+Operator	Example (x=True, y=False)	Result
+
+and	x and y	False
+or	x or y	True
+not	not x	False
+
+4. Assignment Operators
+
+Used to assign values to variables.
+Operator	Example (a=5)	Equivalent to	Result
+
+=	a = 5	—	5
++=	a += 3	a = a + 3	8
+-=	a -= 2	a = a - 2	6
+*=	a *= 2	a = a * 2	10
+/=	a /= 2	a = a / 2	2.5
+%=	a %= 3	a = a % 3	2
+
+5. Bitwise Operators (work at the binary level)
+Operator	Example (a=6, b=3)	Binary Result	Decimal
+
+& (AND)	a & b	110 & 011	2
+`	` (OR)	`a	b`
+^ (XOR)	a ^ b	110 ^ 011	5
+~ (NOT)	~a	—	-7
+<<	a << 1	Shift left	12
+>>	a >> 1	Shift right	3
+
+6. Membership Operators
+
+Check if a value is present in a sequence (like list, string).
+Operator	Example	Result
+
+in	"a" in "apple"	True
+not in	"x" not in "apple"	True
+
+
+7. Identity Operators
+
+Check if two objects share the same memory location.
+Operator	Example (x=[1,2], y=[1,2], z=x)	Result
+
+is	x is z	True
+is	x is y	False
+is not	x is not y	True
+
+Example:  Example Python Program using all operators:
+
+          a, b = 10, 3
+
+          # Arithmetic
+          print("Addition:", a + b)       # 13
+          print("Division:", a / b)       # 3.33
+
+          # Relational
+          print("Is a > b?", a > b)       # True
+
+          # Logical
+          print("Logical AND:", (a > 5) and (b < 5))   # True
+
+          # Assignment
+          a += 2
+          print("After a += 2:", a)       # 12
+
+          # Bitwise
+          print("Bitwise AND:", a & b)    # 0
+
+          # Membership
+          print("'p' in 'apple':", 'p' in 'apple')  # True
+
+          # Identity
+          x = [1, 2]
+          y = [1, 2]
+
+
+

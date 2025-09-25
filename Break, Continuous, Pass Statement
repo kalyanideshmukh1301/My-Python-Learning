@@ -1,0 +1,60 @@
+1. break statement
+
+Used to exit a loop immediately when a condition is met.
+The loop is terminated and control goes to the next statement after the loop.
+
+
+•Example:
+
+for i in range(1, 10):
+    if i == 5:
+        break  # stop the loop when i = 5
+    print(i)
+
+Output:
+
+1
+2
+3
+4
+
+2. continue statement
+
+Used to skip the current iteration of the loop and move to the next iteration.
+The loop is not terminated, only that one iteration is skipped.
+
+
+Example:
+
+for i in range(1, 6):
+    if i == 3:
+        continue  # skip when i = 3
+    print(i)
+
+ Output:
+
+1
+2
+4
+5
+
+3. pass statement
+
+It is just a placeholder to avoid syntax errors.
+Often used when you haven’t written the code yet but want to keep the structure.
+
+
+•Example:
+
+for i in range(1, 6):
+    if i == 3:
+        pass  # does nothing
+    print(i)
+
+Output:
+
+1
+2
+3
+4
+5

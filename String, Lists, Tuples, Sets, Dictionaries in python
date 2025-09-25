@@ -1,0 +1,100 @@
+1) String
+
+• A string is a sequence of characters enclosed within single (' '), double (" "), or triple (''' ''' / """ """) quotes.
+• Strings are immutable → once created, they cannot be modified.
+• Indexing and slicing can be used to access parts of the string.
+• Common operations: concatenation, repetition, searching, splitting, joining, case conversion.
+• Use: Handling textual data, names, sentences, tokens, etc.
+
+Example:   
+
+s = "Hello"
+print(s[0])       
+print(s[1:4])
+
+Output: 
+
+H
+ell
+
+
+2) List
+
+• A list is an ordered collection of elements enclosed in square brackets [ ].
+• Lists are mutable → elements can be added, removed, or modified.
+• Allows duplicate values and elements of different data types.
+• Supports indexing, slicing, and various built-in methods (append, extend, insert, remove, sort, reverse, etc.).
+• Use: Storing multiple related values, dynamic collections, data processing.
+
+Example: 
+
+lst = [10, 20, 30, 20]
+lst.append(40)
+lst[1] = 50
+print(lst)
+
+Output:
+
+[10, 50, 30, 20, 40]
+
+
+3) Tuple
+
+• A tuple is an ordered collection of elements enclosed in parentheses ( ).
+• Tuples are immutable → once defined, their elements cannot be changed.
+• Allows duplicate values and multiple data types.
+• Faster than lists because they are fixed in size.
+• Use: Fixed collections (like coordinates, records) and dictionary keys.
+
+Example:
+
+t = (1, 2, 3, 2)
+print(t[0])         
+print(t.count(2))  
+
+Ourput:
+
+1
+2
+
+
+4) Set
+
+• A set is an unordered collection of unique elements enclosed in curly braces { }.
+• Sets are mutable, but their elements must be immutable (no lists/dictionaries as elements).
+• Does not allow duplicates; automatically removes them.
+• Supports mathematical operations like union, intersection, difference, symmetric difference.
+• Use: Removing duplicates, fast membership testing, mathematical set operations.
+
+Example:
+
+s = {1, 2, 2, 3}
+print(s)        
+s.add(4)
+print(s)
+
+Output:
+
+{1, 2, 3}
+{1, 2, 3, 4}
+
+
+5) Dictionary
+
+• A dictionary is a collection of key-value pairs, enclosed in curly braces { }.
+• Keys must be unique and immutable, while values can be of any type.
+• Dictionaries are mutable → values can be added, updated, or deleted.
+• Supports methods like get(), update(), pop(), and views like keys(), values(), items().
+• Use: Representing structured data (like JSON), fast lookups, mapping one value to another.
+
+Example:
+
+d = {"name": "Kalyani", "age": 20}
+print(d["name"])    
+d["age"] = 21       
+print(d)
+
+Output:
+
+Kalyani
+{'name': 'Kalyani', 'age': 21}

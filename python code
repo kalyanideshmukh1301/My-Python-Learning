@@ -1,0 +1,10 @@
+Name = input("Entre your name:")
+Age = int(input("Enter your age:"))
+
+print("Hello", Name + "!")
+print("You are",Age,"years old.")
+
+if age >= 18: 
+   print("You are an adult")
+else:
+   print("You are not an adult")

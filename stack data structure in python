@@ -1,0 +1,18 @@
+stack = []
+
+stack.append(10)
+stack.append(20)
+stack.append(30)
+print("Stack after pushes:", stack)
+
+if stack:
+    print("Top element:", stack[-1])
+
+
+if stack:
+    print("Popped element:", stack.pop())
+if stack:
+    print("Popped element:", stack.pop())
+
+
+print("Stack now:", stack)

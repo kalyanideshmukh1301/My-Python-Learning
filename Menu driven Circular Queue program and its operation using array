@@ -1,0 +1,68 @@
+size = 5
+queue = [None] * size
+front = -1
+rear = -1
+
+def is_full():
+    return (rear + 1) % size == front
+
+def is_empty():
+    return front == -1
+
+def enqueue():
+    global front, rear
+    value = int(input("Enter a number to insert: "))
+    if is_full():
+        print("Queue is Full!")
+    else:
+        if front == -1:   
+            front = 0
+        rear = (rear + 1) % size
+        queue[rear] = value
+        print("Inserted:", value)
+
+def dequeue():
+    global front, rear
+    if is_empty():
+        print("Queue is Empty!")
+    else:
+        data = queue[front]
+        if front == rear:  
+            front = rear = -1
+        else:
+            front = (front + 1) % size
+        print("Deleted:", data)
+
+def display():
+    if is_empty():
+        print("Queue is Empty!")
+    else:
+        print("Circular Queue:", end=" ")
+        i = front
+        while True:
+            print(queue[i], end=" ")
+            if i == rear:
+                break
+            i = (i + 1) % size
+        print()
+
+while True:
+    print("\n---- Circular Queue Menu ----")
+    print("1. Insert")
+    print("2. Delete")
+    print("3. Display")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        enqueue()
+    elif choice == 2:
+        dequeue()
+    elif choice == 3:
+        display()
+    elif choice == 4:
+        print("Exiting program...")
+        break
+    else:
+        print("Invalid choice!")

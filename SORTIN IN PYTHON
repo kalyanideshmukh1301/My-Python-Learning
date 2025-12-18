@@ -1,0 +1,215 @@
+INSERTION STORING MENU DRIVEN PROGRAM
+
+def insertion_sort(arr):
+    for i in range(1, len(arr)):
+        key = arr[i]
+        j = i - 1
+        while j >= 0 and arr[j] > key:
+            arr[j + 1] = arr[j]
+            j -= 1
+        arr[j + 1] = key
+    return arr
+
+
+while True:
+    print("\n--- MENU ---")
+    print("1. Enter elements")
+    print("2. Perform Insertion Sort")
+    print("3. Display elements")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        arr = list(map(int, input("Enter elements separated by space: ").split()))
+        print("Elements stored successfully.")
+
+    elif choice == 2:
+        try:
+            arr = insertion_sort(arr)
+            print("Array sorted using Insertion Sort.")
+        except NameError:
+            print("Please enter elements first.")
+
+    elif choice == 3:
+        try:
+            print("Current elements:", arr)
+        except NameError:
+            print("No elements to display.")
+
+    elif choice == 4:
+        print("Exiting program.")
+        break
+
+    else:
+        print("Invalid choice. Please try again.")
+
+
+
+BUBBLE SOETING MENU DRIVEN PROGRAM
+
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n - 1):
+        for j in range(n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+    return arr
+
+
+while True:
+    print("\n--- MENU ---")
+    print("1. Enter elements")
+    print("2. Perform Bubble Sort")
+    print("3. Display elements")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        arr = list(map(int, input("Enter elements separated by space: ").split()))
+        print("Elements stored successfully.")
+
+    elif choice == 2:
+        try:
+            bubble_sort(arr)
+            print("Array sorted using Bubble Sort.")
+        except NameError:
+            print("Please enter elements first.")
+
+    elif choice == 3:
+        try:
+            print("Current elements:", arr)
+        except NameError:
+            print("No elements to display.")
+
+    elif choice == 4:
+        print("Exiting program.")
+        break
+
+    else:
+        print("Invalid choice. Please try again.")
+
+
+SHELL SORTING
+
+
+def shell_sort(arr):
+    n = len(arr)
+    gap = n // 2
+
+    while gap > 0:
+        for i in range(gap, n):
+            temp = arr[i]
+            j = i
+            while j >= gap and arr[j - gap] > temp:
+                arr[j] = arr[j - gap]
+                j -= gap
+            arr[j] = temp
+        gap //= 2
+    return arr
+
+
+while True:
+    print("\n--- MENU ---")
+    print("1. Enter elements")
+    print("2. Perform Shell Sort")
+    print("3. Display elements")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        arr = list(map(int, input("Enter elements separated by space: ").split()))
+        print("Elements stored successfully.")
+
+    elif choice == 2:
+        try:
+            shell_sort(arr)
+            print("Array sorted using Shell Sort.")
+        except NameError:
+            print("Please enter elements first.")
+
+    elif choice == 3:
+        try:
+            print("Current elements:", arr)
+        except NameError:
+            print("No elements to display.")
+
+    elif choice == 4:
+        print("Exiting program.")
+        break
+
+    else:
+        print("Invalid choice. Please try again.")
+
+
+HEAP SORT IN PYTHON
+
+
+def heapify(arr, n, i):
+    largest = i
+    left = 2 * i + 1
+    right = 2 * i + 2
+
+    if left < n and arr[left] > arr[largest]:
+        largest = left
+
+    if right < n and arr[right] > arr[largest]:
+        largest = right
+
+    if largest != i:
+        arr[i], arr[largest] = arr[largest], arr[i]
+        heapify(arr, n, largest)
+
+
+def heap_sort(arr):
+    n = len(arr)
+
+    # Build max heap
+    for i in range(n // 2 - 1, -1, -1):
+        heapify(arr, n, i)
+
+    # Extract elements from heap
+    for i in range(n - 1, 0, -1):
+        arr[i], arr[0] = arr[0], arr[i]
+        heapify(arr, i, 0)
+
+    return arr
+
+
+while True:
+    print("\n--- MENU ---")
+    print("1. Enter elements")
+    print("2. Perform Heap Sort")
+    print("3. Display elements")
+    print("4. Exit")
+
+    choice = int(input("Enter your choice: "))
+
+    if choice == 1:
+        arr = list(map(int, input("Enter elements separated by space: ").split()))
+        print("Elements stored successfully.")
+
+    elif choice == 2:
+        try:
+            heap_sort(arr)
+            print("Array sorted using Heap Sort.")
+        except NameError:
+            print("Please enter elements first.")
+
+    elif choice == 3:
+        try:
+            print("Current elements:", arr)
+        except NameError:
+            print("No elements to display.")
+
+    elif choice == 4:
+        print("Exiting program.")
+        break
+
+    else:
+        print("Invalid choice. Please try again.")
+
+
+

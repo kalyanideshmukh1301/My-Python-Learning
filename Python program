@@ -1,0 +1,95 @@
+from collections import deque
+
+students = []           
+undo_stack = []        
+process_queue = deque()  
+
+
+def search_student(name, index=0):
+    if index == len(students):
+        return None
+    if students[index]["name"] == name:
+        return students[index]
+    return search_student(name, index + 1)
+
+
+
+def add_student():
+    name = input("Enter name: ")
+    marks = int(input("Enter marks: "))
+
+    student = {"name": name, "marks": marks}
+    students.append(student)
+    undo_stack.append(student)
+    process_queue.append(student)
+
+    print("Student added successfully!")
+
+
+def display_students():
+    if not students:
+        print("No records found")
+        return
+
+    for s in students:
+        print(f"Name: {s['name']}, Marks: {s['marks']}")
+
+
+def sort_students():
+    students.sort(key=lambda x: x["marks"])
+    print("Students sorted by marks")
+
+
+def undo_last():
+    if not undo_stack:
+        print("Nothing to undo")
+        return
+
+    last = undo_stack.pop()
+    students.remove(last)
+    print("Last student removed")
+
+
+def process_student():
+    if not process_queue:
+        print("No students in queue")
+        return
+
+    s = process_queue.popleft()
+    print(f"Processing student: {s['name']}")
+
+
+while True:
+    print("\n---- Student Record System ----")
+    print("1. Add Student")
+    print("2. Display Students")
+    print("3. Search Student (Recursion)")
+    print("4. Sort Students")
+    print("5. Undo Last Entry (Stack)")
+    print("6. Process Student (Queue)")
+    print("7. Exit")
+
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        add_student()
+    elif choice == "2":
+        display_students()
+    elif choice == "3":
+        name = input("Enter name to search: ")
+        result = search_student(name)
+        if result:
+            print("Found:", result)
+        else:
+            print("Student not found")
+    elif choice == "4":
+        sort_students()
+    elif choice == "5":
+        undo_last()
+    elif choice == "6":
+        process_student()
+    elif choice == "7":
+        print("Thank you!")
+        break
+    else:
+        print("Invalid choice")

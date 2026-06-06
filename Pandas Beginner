@@ -1,0 +1,27 @@
+import pandas as pd
+
+candidate_name = pd.Series(['Kalyani', 'Samarth', 'Ganesh', 'Neetu', ] , index = [1, 2, 3, 4])
+print(candidate_name)
+
+# DataFrame
+
+applications =pd.DataFrame({'Candidate_id': [1, 2, 3, 4], 'Candidate_name': ['Kalyani', 'Samarth', 'Ganesh', 'Neetu'], 'experience_years': [5, 3, 4, 2], 'technical_score': [85, 90, 80, 88], 'communication_score': [80, 85, 78, 90], 'source': ['LinkedIn', 'Indeed', 'Referral', 'Company Website']})
+print(applications)
+
+# 1.Inspect MetaData 
+
+print(applications.head())
+print(applications.shape)
+print(applications.dtypes)
+print(applications.info())
+print(applications.describe())
+
+# 2.Vectorized calculations
+
+applications['overall_score'] = (applications['technical_score'] * 0.7) + (applications['communication_score'] * 0.3)
+print(applications)
+
+# 3. Boolean filtering
+
+shortlisted_candidates = applications[applications['overall_score'] >= 85]
+print(shortlisted_candidates)  explain this code
